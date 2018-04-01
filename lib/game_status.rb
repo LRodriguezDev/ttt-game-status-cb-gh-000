@@ -32,3 +32,7 @@ def won?(board)
   end
   return winner_combination
 end
+
+def full?(board)
+  board.none?{|position| position == " "}
+end
